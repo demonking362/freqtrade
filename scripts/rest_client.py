@@ -1,12 +1,12 @@
-#!/usr/bin/env python3
-"""
-Simple command line client into RPC commands
-Can be used as an alternate to Telegram
+try:
+    import cirq
+except ImportError:
+    print("installing cirq...")
+% pip install --quiet cirq
+    import cirq
 
-Should not import anything from freqtrade,
-so it can be used as a standalone script.
-"""
-
+    print("installed cirq.")
+     
 import argparse
 import inspect
 import json
